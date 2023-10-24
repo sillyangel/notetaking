@@ -1,0 +1,77 @@
+.topBar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 40px;
+  background-color: #333;
+  border-bottom: 3px solid #4f4f4f;
+  top: 0px;
+  z-index: 10;
+  position: fixed;
+  -webkit-user-select: none;
+}
+
+.topBar > .titleBar {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+.topBar > .titleBar {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  width: 100%;
+}
+.titleBar{
+  margin-left: 10px;
+  width: 100%;
+  line-height: 30px;
+  margin-top: 5px;
+  padding-bottom: 5px;
+  -webkit-app-region: drag;
+}
+.topBar > .titleBarBtns{
+  display: flex;
+  flex-direction: row;
+  width: 100px;
+  height: 40px;
+}
+.titleBarBtns > .topBtn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.titleBarBtns > .topBtn:hover {
+  background-color: #333;
+}
+.titleBarBtns > .topBtn:active {
+  background-color: #7dd8ff;
+}
+
+
+
+
+
+
+
+
+
+  <div class="topBar">
+    <div class="titleBar">
+        <div id="title">
+          Music Player
+        </div>
+      </div>
+      <div class="titleBarBtns">
+        <button aria-label="Minimize" class="topBtn minimizebtn" id="minimizebtn"><i class="fas fa-window-minimize" style="color: #ffffff;"></i></button>
+        <button aria-label="Maximize" class="topBtn maximizebtn" id="maximizebtn"><i class="fas fa-window-maximize" style="color: #ffffff;"></i></button>
+        <button aria-label="Close" class="topBtn closebtn" id="closebtn"><i class="fas fa-times" style="color: #ffffff;"></i></button>
+    </div>
+  </div>
