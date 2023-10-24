@@ -1,0 +1,46 @@
+{
+  "name": "notetaking",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "build-dev": "webpack --mode development",
+    "build-prod": "webpack --mode production",
+    "build": "npm run build-prod && electron-builder "
+  },
+  "build": {
+    "appId": "electrongameapp",
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "installerIcon": "icon.ico",
+      "uninstallerIcon": "icon.ico",
+      "uninstallDisplayName": "electrongameapp uninstaller",
+      "license": "license.md",
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@electron-forge/cli": "^6.4.2",
+    "@electron-forge/maker-deb": "^6.4.2",
+    "@electron-forge/maker-rpm": "^6.4.2",
+    "@electron-forge/maker-squirrel": "^6.4.2",
+    "@electron-forge/maker-zip": "^6.4.2",
+    "@electron-forge/plugin-auto-unpack-natives": "^6.4.2",
+    "electron": "27.0.2"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0",
+    "path": "^0.12.7"
+  }
+}
