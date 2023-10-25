@@ -7,10 +7,6 @@ const ipc = ipcMain;
 if (require('electron-squirrel-startup')) {
   app.quit();
 }
-
-
-
-
 function createWindow() {
   const mainWindow = new BrowserWindow({
     width: 1200,

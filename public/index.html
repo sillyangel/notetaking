@@ -1,11 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <title>‎</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Note taking</title>
-</head>
+    <script defer src="./ipcfun.js"></script>
+    </head>
 <body>
-    
-</body>
-</html>
+  <div class="topBar">
+    <div class="titleBar">
+        <div id="title">
+          Music Player
+        </div>
+      </div>
+      <div class="titleBarBtns">
+        <button aria-label="Minimize" class="topBtn minimizebtn" id="minimizebtn"><i class="fas fa-window-minimize" style="color: #ffffff;"></i></button>
+        <button aria-label="Maximize" class="topBtn maximizebtn" id="maximizebtn"><i class="fas fa-window-maximize" style="color: #ffffff;"></i></button>
+        <button aria-label="Close" class="topBtn closebtn" id="closebtn"><i class="fas fa-times" style="color: #ffffff;"></i></button>
+    </div>
+  </div>
+  </body>
+  <script src="main.js"></script>
+  <script type="module" src="./dist/main.bundle.js"></script>
+  </html>

@@ -1,0 +1,10 @@
+.vscode/
+./vscode/extensions/
+firebase-debug.log
+dev/
+./dev/
+./node_modules/
+node_modules/
+node_modules
+
+out/
